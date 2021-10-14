@@ -1,0 +1,39 @@
+.detalhesEvento{
+    box-shadow: 0px 0px 5px black;
+    padding-top: 5px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 13px;
+}
+
+.formConvidado{
+    box-shadow: 0px 0px 5px black;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
+.tabelaConvidado{
+    width: 60%;
+}
+
+.formEveto{
+    box-shadow: 0px 0px 5px black;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+    margin-top: 13px;
+}
+
+.inicio{
+    box-shadow: 0px 0px 5px black;
+    margin-top: 13px;
+}
+
+.notfica{
+    margin-top: 15px;
+    text-align: center;
+}
