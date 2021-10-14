@@ -12,32 +12,43 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="style/styleCss.css"/>
+    <link rel="stylesheet" href="materialize/style/styleCss.css">
+
 </head>
 <body>
-
-<h1>Cadastro de Eventos</h1>
-<h3><a href="/eventos" class="waves-effect waves-light btn"><i class="material-icons left">format_list_bulleted</i>Listar
-    Evento</a></h3>
-
-<form class="container" method="post">
-
-    Nome: <input type="text" value="" name="nome">
-
-    <div class="row">
-        <div class="input - file-field col s6">
-            Local: <input type="text" value="" name="local">
+<header>
+    <nav class="menu">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo" style="margin-left: 10px">Cadastro de Eventos</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/eventos" class="waves-effect waves-light btn"><i class="material-icons left">format_list_bulleted</i>Listar
+                    Evento</a></li>
+            </ul>
         </div>
-        <div class="input - file-field col s3">
-            Data: <input type="date" value="" name="data">
-        </div>
-        <div class="input - file-field col s3">
-            Horario: <input type="text" value="" name="horario">
-        </div>
-    </div>
-    <button type="submit" class="waves-effect waves-light btn">Salvar</button>
 
-</form>
+    </nav>
+
+</header>
+<div class="container notfica">
+    <th:block th:include="evento/mensagemValidacao.html"></th:block>
+</div>
+<div class="container formEveto">
+    <form class="container" method="post">
+        <div class="row">
+            Nome: <input type="text" value="" name="nome" placeholder="Nomo Completo">
+            <div class="input - file-field col s6">
+                Local: <input type="text" value="" name="local" placeholder="Descrição">
+            </div>
+            <div class="input - file-field col s3">
+                Data: <input type="date" value="" name="data">
+            </div>
+            <div class="input - file-field col s3">
+                Horario: <input type="time" value="" name="horario">
+            </div>
+        </div>
+        <button type="submit" class="waves-effect waves-light btn">Salvar</button>
+    </form>
+</div>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="materialize/js/materialize.min.js"></script>

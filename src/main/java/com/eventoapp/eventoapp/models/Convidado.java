@@ -2,7 +2,6 @@ package com.eventoapp.eventoapp.models;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotEmpty;
 
@@ -32,6 +31,10 @@ public class Convidado {
 
     public void setNomeConvidado(String nomeConvidado) {
         this.nomeConvidado = nomeConvidado;
+    }
+
+    public Evento getEvento() {
+        return evento;
     }
 
     public void setEvento(Evento evento) {
